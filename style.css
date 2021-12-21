@@ -31,9 +31,6 @@ ul.social li {
   margin: 0 40px 0 0;
 }
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 50%;
 }
 section.about {
@@ -106,27 +103,14 @@ section.contact ul li a {
 section.contact ul li i {
   font-size: 1.308em;
 }
-
-footer {
-  width: 100%;
-  display: block;
-  background: #eeeeee;
-  padding: 10px 0;
-}
-footer .copyright {
-  width: 100%;
-  display: block;
-  text-align: right;
-  color: #5e0101;
-  text-transform: uppercase;
-  font-size: 0.813em;
-  padding: 20px 0 0 0;
-}
   section.about {
     padding: 40px 0;
   }
   section.about .smallTitle {
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
   section.about article {
     text-align: center;
@@ -159,7 +143,21 @@ footer .copyright {
   section.contact ul li i {
     display: none;
   }
-
+  footer .copyright {
+    width: 100%;
+    display: block;
+    text-align: right;
+    color: #5e0101;
+    text-transform: uppercase;
+    font-size: 0.813em;
+    padding: 20px 0 0 0;
+  }
+  footer {
+    width: 100%;
+    display: block;
+    background: #eeeeee;
+    padding: 10px 0;
+  }
   footer ul.social {
     text-align: center;
   }
@@ -167,10 +165,20 @@ footer .copyright {
     text-align: center;
     color: #000;
   }
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
+img{
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+  transition: 3s;
+}
+.boxed {
+  border: 1px solid rgb(190, 190, 190) ;
+  background-color: #e0dcdc;
+}
+.boxed1{
+  border: 1px solid rgb(190, 190, 190) ;
+  background-color: #e0dcdc;
+}
+.boxed2{
+  text-align: center;
+}
