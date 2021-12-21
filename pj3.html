@@ -93,24 +93,39 @@
         }
 
     </script>
+    <style> 
+     /* body {  
+            background: linear-gradient(to left,  #000000, #E82126);
+       } */
+
+        img {  
+          width: 350px; 
+          float: right; 
+          margin-right: 10px; 
+        } 
+      </style> 
+       
+      <!-- <img src="images/foto1.jpg" />  -->
+      <div> 
+        <!-- Your long text here....  -->
+      </div> 
+
+      <div class="boxed">          
+    <!--Nderrimi i fotove -->
+    <img src="" id="image">
+      <script type = "text/javascript">
+          let image = document.getElementById('image');
+          let images = ['tesla-model-p-concept-1.jpg','tesla-model-p-concept-2.jpg','tesla-model-p-concept-3.jpg','tesla-model-p-concept-4.jpg']
+        setInterval(function(){
+            let random = Math.floor(Math.random()*4);
+            image.src = images[random];
+        },800);
+        </script>
+     
             <!-- Start of About --> 
             <section class="about" id="about">
-                <div class="row"> 
-                    
-                    <div class="large-8 large-centered column">
-                        <div class="title">
-                            <h1>E ardhmja e teknoligjise ...Tesla model P </h1>
-                            <span> ... </span>
-                            <p>
-                                Për një kohë, kishte zëra se Elon Musk po punon për të nxjerrë në treg një smartphone të njohur si Tesla Model P.
-                                Tani kemi marrë "shumë" karakteristika shumë interesante në lidhje me këtë telefon Tesla që do të funksiononte në Mars duke përdorur Starlink.
-                             </p>
-                        </div>
-                    </div>
-                    
-                    <div class="large-4 hide-for-medium-only hide-for-small-only column start"> 
-                            <img src="images/foto1.jpg" alt="foto1" title="Tesla model P" class="center">
-                            <div class="text"><div><span>Tesla model P</P></span></div></div>
+                <div class="row">            
+                <div class="large-4 hide-for-medium-only hide-for-small-only column start"> 
                     </div>
                     <div class="large-6 medium-6 column"> 
                         <article>
@@ -118,6 +133,7 @@
                                  <h2>ABOUT US</h2>
                                  <span>  </span>
                             </div>
+                            
                             <p>
                                 Telefoni i ri Tesla me teknologjinë SpaceX. Nuk janë befasuese, për sa kohë që Tesla, e udhëhequr nga CEO i saj,
                                  kënaqet duke eksperimentuar dhe pushtuar tregje të reja. Megjithatë, paraqitjet e telefonit Tesla, të cilat u shfaqën disa ditë më parë,
@@ -125,7 +141,13 @@
                                    mundësisht një smartphone, është shfaqur në homazh ndaj Tesla dhe SpaceX.
                             </p>
                         </article>
-                    </div>        
+                    </div>  
+                </div>
+            </section>      
+        </div>
+    </body>
+    </html>   
+                   
             <!-- End of About -->
      
             <!-- Start of Services --> 
@@ -148,7 +170,7 @@
                     
                     
             <!-- End of Services -->
-            
+            <div class="boxed1">
             <!-- Start of Contact --> 
             <section class="contact" id="contact">
                 <div class="row">
@@ -160,6 +182,7 @@
                             <p>Per cdo pa rregullsi mundemi te na shkruni apo te na telefononi</p>
                         </div>
                     </div>
+                    <div class="boxed2">
                     <!-- Form Section --> 
                     <div class="large-8 large-uncentered medium-10 medium-centered column">
                         <div class="row">
@@ -181,7 +204,8 @@
                                 </div>
                                 
                                 <div class="large-12 column">
-                                    <textarea id="comments">WHAT’S ON YOUR MIND</textarea>
+                                    <textarea id="comments" style="font-size: 10pt; height: 80px; width:380px; ">WHAT’S ON YOUR MIND</textarea>
+                                    
                                 </div>
                                 
                                 <div class="large-12 column">
@@ -190,6 +214,7 @@
                             </form>
                         </div>
                     </div>
+                </div>
                     <!-- End of Form Section -->
                     
                     <div class="large-4 large-uncentered medium-10 medium-centered column">
@@ -222,19 +247,19 @@
                     <div class="large-12 column"> </div>
                     
                 </div>
-            </section>
+            
             <!-- End of Contact -->
             
             <!-- Start of Footer -->
             <footer>
                     <div class="large-6 medium-12 column">
                         <div class="copyright">
-                         <h4>© : 2021 Samir Kabashi & Ermal Konomi</h4>   
+                         <h4> COPYRIGHT © : 2021 Samir Kabashi & Ermal Konomi</h4>   
                         </div>   
                     </div>
                 </div>
             </footer>
             <!-- End of Footer -->
-
+</div>
 </body>
 </html>
