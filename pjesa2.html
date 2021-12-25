@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TESLA</title>
+    <link href="style.css" type="text/css" rel="stylesheet" media="screen" />
+</head>
+<div class="boxed">
+
+    <!--Nderrimi i fotove -->
+    <body1>
+        <div1 <p1>
+            <br> <b> KONCEPTI I TELEFONIT TESLA MODEL P </b></br>
+            I ri nga makina e tij konceptuale Citroen eCV, stilisti Martin Hajek është rikthyer në rrënjët e tij me
+            një telefon konceptual.
+            I quajtur Model P, ai imagjinon se si mund të duket një telefon i markës Tesla. Pjesa e pasme e
+            telefonit ka një bojë të kuqe me shkëlqim,
+            si një makinë, me një pendë skulpturore në qendër dhe një prerje kamere që kujton fenerët e makinave të
+            kompanisë.
+            Thirrje të tjera në gjuhën e tyre të automobilave mund të gjenden në "notch" me majë në krye të ekranit
+            dhe në detajet e fibrave të karbonit
+            rreth altoparlantëve dhe portës së karikimit. Thjesht një koncept në këtë pikë, ai paraqet një "po
+            sikur?" skenar.
+            </p1>
+        </div1>
+        <!--image slider start-->
+        <div class="slider">
+            <div class="slides">
+                <!--radio buttons start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--radio buttons end-->
+                <!--slide images start-->
+                <div class="slide first">
+                    <img src="images/tesla-model-p-concept-1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/tesla-model-p-concept-2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/tesla-model-p-concept-3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/tesla-model-p-concept-4.jpg" alt="">
+                </div>
+                <!--slide images end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--automatic navigation end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+
+        <!--image slider end-->
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 5000);
+
+        </script>
+
+    </body1>
+</div>
+</body>
