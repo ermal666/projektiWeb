@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="main">
-        <nav>
+        <!--<nav>
             <div class="logo">
                 <img src="tesla-logo-png-2238.png">
             </div>
@@ -16,10 +16,21 @@
                     <li><a href="tset.html">Home</a></li>
                     <li><a href="#">Phone</a></li>
                     <li><a href="#">Pre-Order</a></li>
-                    <li><a href="#">Log In</a></li>
+                    <li><a href="login.html">Log In</a></li>
                 </ul>
             </div>
-        </nav>
+        </nav>-->
+        <header>
+            <a href="projekti_html.html"><img src="tesla-logo-png-2238.png" class="logo" width="220px"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register2.html">Register</a></li>
+            </ul>
+        </header>
+        <section class="banner"></section>
+        <!---->
         <div class="information">
             <div class="overlay"></div>
             <img src="no backround 1.png" class="mobile"> 
@@ -84,6 +95,13 @@
 
         }
 
+    </script>
+    <!---->
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
     </script>
     
 
