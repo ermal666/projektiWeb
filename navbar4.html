@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar4.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <header class="sticky">
+            <a href="projektiCOPY.html"><img src="tesla-logo-png-2238.png" class="logo" width="220px"></a>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="projektiCOPY.html">Home</a></li>
+                <li><a href="#">Phone</a></li>
+                <li><a href="loginCOPY.html">Account</a></li>
+                <li><a href="contactusCOPY.html">Contact Us</a></li>
+
+            </ul>
+        </header>
+        <section class="banner"></section>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+
+</body>
+
+</html>
